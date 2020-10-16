@@ -7,7 +7,6 @@ import re
 import random
 import string
 import urllib.parse
-import simpleaudio as sa
 from time import sleep
 from selenium import webdriver
 from datetime import datetime
@@ -117,6 +116,7 @@ def get_session_token():
             sleep(0.1)
         session_token = re.sub(
             r'.*https://api.funcaptcha.com/fc/gc/\?token=([^&]+)&amp;.*$', r'\1', driver.page_source.replace('\n', ''))
+        sleep(2)
     except KeyboardInterrupt:
         driver.close()
         raise(KeyboardInterrupt)

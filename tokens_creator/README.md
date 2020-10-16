@@ -19,7 +19,7 @@ There has been no measures taken to prevent the Captcha bypass since then. If th
 
 - Install the following pip packages:
 ```bash
-pip3 install requests simpleaudio selenium
+pip3 install requests selenium
 ```
 
 - Get a free AssemblyAI API Token:
